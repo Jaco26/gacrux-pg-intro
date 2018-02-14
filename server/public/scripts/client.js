@@ -21,8 +21,36 @@ function onReady(){
     })
     .fail(function(error){
       console.log(error);
-    })
+    });
   }
 
+  function updateSongRank(id, newRank){
+    $.ajax({
+      type: 'PUT',
+      url: `songs/${id}`,
+      data: {rank: newRank}
+    }).done((response) =>{
+      console.log('Updated song rank');
+      
+    }).fail((error) => {
+      console.log('error on updateSongRank:', error);
+      
+    })
+  } //END updateSongRank()
 
-}
+
+  function deleteSong(id) {
+    $.ajax({
+      type: 'DELETE',
+      url: `/songs/${id}`,
+    }).done((response) => {
+      console.log('deleted song');
+    }).fail((error) => {
+      console.log('error: ', error);
+    });
+  } // END deleteSong()
+
+} // END onReady()
+
+
+

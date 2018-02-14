@@ -1,7 +1,6 @@
 {
   "name": "gacrux-pg-intro",
   "version": "1.0.0",
-  "description": "",
   "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,5 +14,14 @@
     "express": "^4.16.2",
     "jquery": "^3.3.1",
     "pg": "^7.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaco26/gacrux-pg-intro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jaco26/gacrux-pg-intro/issues"
+  },
+  "homepage": "https://github.com/Jaco26/gacrux-pg-intro#readme",
+  "description": ""
 }
